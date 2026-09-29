@@ -1,9 +1,11 @@
 <!doctype html>
+
 <html lang="en">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Allyson Morris — Computer Animation</title>
+
 <style>
   @import url('https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,500;1,9..144,500&family=Space+Grotesk:wght@400;500;600&display=swap');
 
@@ -17,7 +19,9 @@
     --rule: rgba(32,26,23,0.16);
   }
 
-  *{ box-sizing: border-box; }
+  *{
+    box-sizing: border-box;
+  }
 
   body{
     margin: 0;
@@ -27,9 +31,20 @@
     line-height: 1.55;
   }
 
-  .wrap{ max-width: 900px; margin: 0 auto; padding: 0 28px; }
+  .wrap{
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 0 28px;
+  }
 
-  a{ color: var(--burgundy); }
+  a{
+    color: var(--burgundy);
+  }
+
+
+  /* =========================
+     HOME / HERO
+  ========================= */
 
   .home{
     min-height: 100vh;
@@ -49,13 +64,22 @@
     margin: 0 0 18px;
   }
 
-  .home h1 span{ color: var(--burgundy); }
+  .home h1 span{
+    color: var(--burgundy);
+  }
 
   .home p{
     max-width: 46ch;
     color: var(--ink-soft);
     font-size: 17px;
     margin: 0 0 8px;
+  }
+
+  .project-links{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 28px;
+    margin-top: 8px;
   }
 
   .home a.cta{
@@ -70,7 +94,14 @@
     margin-top: 22px;
   }
 
-  .project{ padding: 70px 0 90px; }
+
+  /* =========================
+     PROJECTS
+  ========================= */
+
+  .project{
+    padding: 70px 0 90px;
+  }
 
   .project__kicker{
     font-family: 'Fraunces', serif;
@@ -96,13 +127,26 @@
     margin-bottom: 50px;
   }
 
-  .byline div{ border-left: 2px solid var(--lime); padding-left: 12px; }
+  .byline div{
+    border-left: 2px solid var(--lime);
+    padding-left: 12px;
+  }
 
-  .byline span{ display: block; font-size: 11px; color: var(--ink-soft); margin-bottom: 2px; }
+  .byline span{
+    display: block;
+    font-size: 11px;
+    color: var(--ink-soft);
+    margin-bottom: 2px;
+  }
 
-  section.block{ padding: 44px 0; border-bottom: 1px solid var(--rule); }
+  section.block{
+    padding: 44px 0;
+    border-bottom: 1px solid var(--rule);
+  }
 
-  section.block:last-child{ border-bottom: none; }
+  section.block:last-child{
+    border-bottom: none;
+  }
 
   .block h3{
     font-family: 'Fraunces', serif;
@@ -111,16 +155,35 @@
     margin: 0 0 18px;
   }
 
+
+  /* =========================
+     VIDEO
+  ========================= */
+
   .frame{
     position: relative;
     width: 100%;
     background: var(--ink);
     border: 1px solid var(--ink);
+    margin-bottom: 10px;
   }
 
-  .frame video{ display: block; width: 100%; height: auto; }
+  .frame video{
+    display: block;
+    width: 100%;
+    height: auto;
+  }
 
-  .frame-cap{ font-size: 13px; color: var(--ink-soft); margin: 10px 2px 0; }
+  .frame-cap{
+    font-size: 13px;
+    color: var(--ink-soft);
+    margin: 10px 2px 22px;
+  }
+
+
+  /* =========================
+     PROJECT 1 ENHANCEMENTS
+  ========================= */
 
   .change{
     display: grid;
@@ -131,7 +194,9 @@
     align-items: start;
   }
 
-  .change:first-of-type{ border-top: none; }
+  .change:first-of-type{
+    border-top: none;
+  }
 
   .change__figure{
     background: var(--ink);
@@ -139,15 +204,138 @@
     overflow: hidden;
   }
 
-  .change__figure img{ width: 100%; height: auto; display: block; }
+  .change__figure img{
+    width: 100%;
+    height: auto;
+    display: block;
+  }
 
-  .change__num{ font-family: 'Fraunces', serif; font-style: italic; color: var(--burgundy); margin: 0 0 6px; }
+  .change__num{
+    font-family: 'Fraunces', serif;
+    font-style: italic;
+    color: var(--burgundy);
+    margin: 0 0 6px;
+  }
 
-  .change h4{ font-family: 'Fraunces', serif; font-weight: 500; font-size: 20px; margin: 0 0 8px; }
+  .change h4{
+    font-family: 'Fraunces', serif;
+    font-weight: 500;
+    font-size: 20px;
+    margin: 0 0 8px;
+  }
 
-  .change p{ margin: 0; color: var(--ink-soft); }
+  .change p{
+    margin: 0;
+    color: var(--ink-soft);
+  }
 
-  .prose p{ max-width: 65ch; }
+  .prose p{
+    max-width: 65ch;
+  }
+
+
+  /* =========================
+     PROJECT DIVIDER
+  ========================= */
+
+  .project-divider{
+    padding: 34px 28px;
+    background: var(--ink);
+    color: var(--paper);
+    text-align: center;
+  }
+
+  .project-divider span{
+    font-family: 'Fraunces', serif;
+    font-style: italic;
+    font-size: 20px;
+  }
+
+
+  /* =========================
+     PROJECT 2
+  ========================= */
+
+  .project-two{
+    background: var(--paper);
+    border-bottom: 8px solid var(--burgundy);
+  }
+
+  .project-two .project{
+    padding-top: 80px;
+  }
+
+
+  /* =========================
+     IMAGE GRIDS
+  ========================= */
+
+  .image-grid{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 18px;
+  }
+
+  .image-placeholder{
+    background: var(--ink);
+    min-height: 230px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+  }
+
+  .image-placeholder img{
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+
+  .image-label{
+    font-size: 12px;
+    color: var(--ink-soft);
+    margin: 7px 0 0;
+  }
+
+
+  /* =========================
+     LARGE PROJECT 2 IMAGES
+  ========================= */
+
+  .large-image{
+    background: var(--ink);
+    width: 100%;
+    min-height: 360px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+  }
+
+  .large-image img{
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+
+  .large-image video{
+    display: block;
+    width: 100%;
+    height: auto;
+    max-height: 700px;
+    object-fit: contain;
+  }
+
+  .source-credit{
+    font-size: 13px;
+    color: var(--ink-soft);
+    margin-top: 16px;
+  }
+
+
+  /* =========================
+     FOOTER
+  ========================= */
 
   footer.foot{
     padding: 30px 0 60px;
@@ -158,103 +346,825 @@
     font-size: 14px;
   }
 
-  footer.foot a{ text-decoration: none; border-bottom: 1px solid var(--burgundy); }
+  footer.foot a{
+    text-decoration: none;
+    border-bottom: 1px solid var(--burgundy);
+  }
+
+
+  /* =========================
+     MOBILE
+  ========================= */
 
   @media (max-width: 640px){
-    .change{ grid-template-columns: 1fr; }
+
+    .change{
+      grid-template-columns: 1fr;
+    }
+
+    .image-grid{
+      grid-template-columns: 1fr;
+    }
+
+    .project-links{
+      flex-direction: column;
+      gap: 4px;
+    }
+
   }
+
 </style>
+
 </head>
+
 <body>
 
+<!-- =========================================================
+     HOME / HERO
+========================================================= -->
+
 <section class="home wrap" id="top">
+
   <h1>Allyson <span>Morris</span></h1>
-  <p>William &amp; Mary | Computer Science Department</p>
-  <a class="cta" href="#project">View my project &rarr;</a>
-</section>
 
-<main class="project wrap" id="project">
+  <p>
+    William &amp; Mary | Computer Science Department
+  </p>
 
-  <p class="project__kicker">Submission</p>
-  <h2>Project 1 &ndash; Planet Animation</h2>
+  <div class="project-links">
 
-  <div class="byline">
-    <div><span>Name</span>Allyson Morris</div>
-    <div><span>Date</span>9/13/2026</div>
-    <div><span>Project</span>Planet Animation</div>
+    <a class="cta" href="#project-1">
+      Project 1 &mdash; Planet Animation &rarr;
+    </a>
+
+    <a class="cta" href="#project-2">
+      Project 2 &mdash; Treasure Chest &rarr;
+    </a>
+
   </div>
 
+</section>
+
+<!-- =========================================================
+     PROJECT 1
+========================================================= -->
+
+<main class="project wrap" id="project-1">
+
+  <p class="project__kicker">
+    Computer Animation &middot; Project 1
+  </p>
+
+  <h2>
+    Project 1 &ndash; Planet Animation
+  </h2>
+
+  <!-- PROJECT 1 INFORMATION -->
+
+  <div class="byline">
+
+    <div>
+      <span>Name</span>
+      Allyson Morris
+    </div>
+
+    <div>
+      <span>Date</span>
+      9/13/2026
+    </div>
+
+    <div>
+      <span>Project</span>
+      Planet Animation
+    </div>
+
+  </div>
+
+  <!-- ORIGINAL ANIMATION -->
+
   <section class="block">
-    <h3>Original tutorial animation</h3>
+
+    <h3>
+      Original tutorial animation
+    </h3>
+
     <div class="frame">
-      <video controls preload="metadata" src="tutorial (2).mp4" type="video/mp4"></video>  
+
+      <video
+        controls
+        preload="metadata"
+        src="tutorial (2).mp4"
+        type="video/mp4">
+      </video>
+
     </div>
-    <p class="frame-cap">Playblast v1 &mdash; the completed tutorial animation, before edits.</p>
+
+    <p class="frame-cap">
+      Playblast v1 &mdash; the completed tutorial animation, before edits.
+    </p>
+
+
     <div class="frame">
-      <video controls preload="metadata" src="secondtut.mp4" type="video/mp4"></video>  
+
+      <video
+        controls
+        preload="metadata"
+        src="secondtut.mp4"
+        type="video/mp4">
+      </video>
+
     </div>
-    <p class="frame-cap">Playblast v1 &mdash; the completed tutorial animation, with background added.</p>
- 
+
+    <p class="frame-cap">
+      Playblast v1 &mdash; the completed tutorial animation, with background added.
+    </p>
+
   </section>
 
+  <!-- ENHANCEMENTS -->
+
   <section class="block">
-    <h3>Enhancements I made</h3>
+
+    <h3>
+      Enhancements I made
+    </h3>
+
 
     <div class="change">
+
       <div class="change__figure">
-        <img src="texture.png" alt="Rendered still showing the updated planet textures">
+
+        <img
+          src="texture.png"
+          alt="Rendered still showing the updated planet textures">
+
       </div>
+
       <div>
-        <p class="change__num">Enhancement 01</p>
-        <h4>Planet textures</h4>
-        <p>I replaced the default planet materials with higher-resolution textures from <a href="https://www.solarsystemscope.com/textures/" target="_blank" rel="noopener">solarsystemscope.com</a>, giving each planet realistic surface color and detail instead of flat shading.</p>
+
+        <p class="change__num">
+          Enhancement 01
+        </p>
+
+        <h4>
+          Planet textures
+        </h4>
+
+        <p>
+          I replaced the default planet materials with higher-resolution
+          textures from
+          <a
+            href="https://www.solarsystemscope.com/textures/"
+            target="_blank"
+            rel="noopener">
+            solarsystemscope.com
+          </a>,
+          giving each planet realistic surface color and detail instead of
+          flat shading.
+        </p>
+
       </div>
+
     </div>
 
-    <div class="change">
-      <div class="change__figure">
-        <img src="shading.jpg" alt="Rendered still showing the sun as the light source">
-      </div>
-      <div>
-        <p class="change__num">Enhancement 02</p>
-        <h4>Sun as the light source</h4>
-        <p>Using Maya's illumination settings, I set the sun as the scene's light source so each planet is lit and shadowed the way it would be from actual sunlight.</p>
-      </div>
-    </div>
 
     <div class="change">
+
       <div class="change__figure">
-        <img src="position.png" alt="Rendered still showing the updated planet positions and orbit speeds">
+
+        <img
+          src="shading.jpg"
+          alt="Rendered still showing the sun as the light source">
+
       </div>
+
       <div>
-        <p class="change__num">Enhancement 03</p>
-        <h4>Planet position and speed</h4>
-        <p>I adjusted the position and orbit speed of each planet so their spacing and motion better reflect their real relative distances and speeds in the solar system.</p>
+
+        <p class="change__num">
+          Enhancement 02
+        </p>
+
+        <h4>
+          Sun as the light source
+        </h4>
+
+        <p>
+          Using Maya's illumination settings, I set the sun as the scene's
+          light source so each planet is lit and shadowed the way it would be
+          from actual sunlight.
+        </p>
+
       </div>
+
+    </div>
+
+
+    <div class="change">
+
+      <div class="change__figure">
+
+        <img
+          src="position.png"
+          alt="Rendered still showing the updated planet positions and orbit speeds">
+
+      </div>
+
+      <div>
+
+        <p class="change__num">
+          Enhancement 03
+        </p>
+
+        <h4>
+          Planet position and speed
+        </h4>
+
+        <p>
+          I adjusted the position and orbit speed of each planet so their
+          spacing and motion better reflect their real relative distances
+          and speeds in the solar system.
+        </p>
+
+      </div>
+
     </div>
 
   </section>
 
+  <!-- FINAL ANIMATION -->
+
   <section class="block">
-    <h3>Modified animation</h3>
+
+    <h3>
+      Modified animation
+    </h3>
+
     <div class="frame">
-      <video controls preload="metadata" src="Untitled design (4).mp4" type="video/mp4"></video>      <p class="frame-cap">Playblast v2 &mdash; the final animation with all three enhancements applied.</p>
-      <p class="frame-cap"><a href="file:///C:/Users/allym/Downloads/Computer%20Animations/v2.avi">Open v2.avi</a></p>
+
+      <video
+        controls
+        preload="metadata"
+        src="Untitled design (4).mp4"
+        type="video/mp4">
+      </video>
+
     </div>
+
+    <p class="frame-cap">
+      Playblast v2 &mdash; the final animation with all three enhancements applied.
+    </p>
+
   </section>
 
+  <!-- PROJECT 1 NOTES -->
+
   <section class="block">
-    <h3>Notes</h3>
+
+    <h3>
+      Notes
+    </h3>
+
     <div class="prose">
-      <p>The textures made the biggest visual difference. By swapping in real planetary surface maps, immediately the scene felt less like a placeholder and more like an actual solar system. The process of switching the light source to the sun took a bit of trial and error in Maya to get the shadows falling naturally on each planet, but it was worth it for how much more physically correct the lighting looks. Finally, adjusting the position and speed of the planets last tied everything together and made the orbits feel more intentional.</p>
+
+      <p>
+        The textures made the biggest visual difference. By swapping in real
+        planetary surface maps, immediately the scene felt less like an
+        placeholder and more like an actual solar system. The process of
+        switching the light source to the sun took a bit of trial and error
+        in Maya to get the shadows falling naturally on each planet, but it
+        was worth it for how much more physically correct the lighting looks.
+        Finally, adjusting the position and speed of the planets last tied
+        everything together and made the orbits feel more intentional.
+      </p>
+
     </div>
+
   </section>
 
 </main>
 
+<!-- =========================================================
+     PROJECT DIVIDER
+========================================================= -->
+
+<div class="project-divider">
+
+  <span>
+    Project 1 &nbsp;&middot;&nbsp; Planet Animation
+  </span>
+
+  &nbsp;&mdash;&nbsp;
+
+  <span>
+    Project 2 &nbsp;&middot;&nbsp; Treasure Chest
+  </span>
+
+</div>
+
+<!-- =========================================================
+     PROJECT 2
+========================================================= -->
+
+<section class="project-two" id="project-2">
+
+  <main class="project wrap">
+
+    <p class="project__kicker">
+      Computer Animation &middot; Project 2
+    </p>
+
+    <h2>
+      Project 2 &ndash; Treasure Chest
+    </h2>
+
+
+    <!-- PROJECT 2 INFORMATION -->
+
+    <div class="byline">
+
+      <div>
+        <span>Name</span>
+        Allyson Morris
+      </div>
+
+      <div>
+        <span>Date</span>
+        9/30/2026
+      </div>
+
+      <div>
+        <span>Project</span>
+        Treasure Chest
+      </div>
+
+      <div>
+        <span>Course</span>
+        CSCI 417 &middot; Computer Animation
+      </div>
+
+    </div>
+
+
+
+    <!-- SOURCE IMAGES -->
+
+    <section class="block">
+
+      <h3>
+        Source Images &amp; References
+      </h3>
+
+      <div class="image-grid">
+
+
+        <!-- REFERENCE IMAGE 1 -->
+
+        <div>
+
+          <div class="image-placeholder">
+
+            <img
+              src="Treasure Chest/Pirate chest.jpg"
+              alt="Smaller pirate chest with a rounded top">
+
+          </div>
+
+          <p class="image-label">
+            Smaller pirate chest with a rounded top, used as a reference for
+            the curved shape of the chest.
+          </p>
+
+        </div>
+
+
+        <!-- REFERENCE IMAGE 2 -->
+
+        <div>
+
+          <div class="image-placeholder">
+
+            <img
+              src="Treasure Chest/Large_Treasure_Chest.jpg"
+              alt="Larger box-shaped treasure chest">
+
+          </div>
+
+          <p class="image-label">
+            Larger treasure chest with a more box-like shape, used as a
+            reference for the overall structure and proportions.
+          </p>
+
+        </div>
+
+      </div>
+
+
+      <p class="source-credit">
+
+        <a
+          href="https://syncwish.juketpd.sbs/index.php?main_page=product_info&products_id=157552"
+          target="_blank"
+          rel="noopener">
+          Reference image source
+        </a>
+
+      </p>
+
+    </section>
+
+
+
+    <!-- MODEL IMAGES -->
+
+    <section class="block">
+
+      <h3>
+        Treasure Chest Model
+      </h3>
+
+      <div class="image-grid">
+
+
+        <!-- FRONT -->
+
+        <div>
+
+          <div class="image-placeholder">
+
+            <img
+              src="Treasure Chest/front_view.jpg"
+              alt="Front view of the smooth-shaded treasure chest model">
+
+          </div>
+
+          <p class="image-label">
+            Front view
+          </p>
+
+        </div>
+
+
+        <!-- BACK -->
+
+        <div>
+
+          <div class="image-placeholder">
+
+            <img
+              src="Treasure Chest/back_view.jpg"
+              alt="Back view of the smooth-shaded treasure chest model">
+
+          </div>
+
+          <p class="image-label">
+            Back view
+          </p>
+
+        </div>
+
+
+        <!-- RIGHT -->
+
+        <div>
+
+          <div class="image-placeholder">
+
+            <img
+              src="Treasure Chest/right_view.jpg"
+              alt="Right view of the smooth-shaded treasure chest model">
+
+          </div>
+
+          <p class="image-label">
+            Right view
+          </p>
+
+        </div>
+
+
+        <!-- LEFT -->
+
+        <div>
+
+          <div class="image-placeholder">
+
+            <img
+              src="Treasure Chest/left_view.jpg"
+              alt="Left view of the smooth-shaded treasure chest model">
+
+          </div>
+
+          <p class="image-label">
+            Left view
+          </p>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+
+    <!-- CLOSED CHEST -->
+
+    <section class="block">
+
+      <h3>
+        Closed Chest
+      </h3>
+
+      <div class="large-image">
+
+        <video
+          controls
+          preload="metadata"
+          src="Treasure Chest/closed_chest.mp4"
+          type="video/mp4">
+        </video>
+
+      </div>
+
+      <p class="frame-cap">
+        Smooth-shaded render of the completed treasure chest in the closed
+        position.
+      </p>
+
+    </section>
+
+
+
+    <!-- OPEN CHEST -->
+
+    <section class="block">
+
+      <h3>
+        Open Chest &amp; Treasure
+      </h3>
+
+      <div class="large-image">
+
+        <video
+          controls
+          preload="metadata"
+          src="Treasure Chest/open_chest.mp4"
+          type="video/mp4">
+        </video>
+
+      </div>
+
+      <p class="frame-cap">
+        Smooth-shaded render of the treasure chest opened with treasure inside.
+      </p>
+
+
+      <div class="prose">
+
+        <p>
+          The treasure inside the chest consists of coins, gems, and pearls.
+        </p>
+
+        <p>
+          I did not download any treasure models from the internet. I used an
+          <a
+            href="https://stock.adobe.com/search?k=open+treasure+chest+filled+with+gold+coins"
+            target="_blank"
+            rel="noopener">
+            Adobe Stock search
+          </a>
+          for minor inspiration, mainly to look at photographs of real treasure
+          chests and see what is typically found inside them, rather than using
+          clipart or AI-generated artwork as a reference.
+        </p>
+
+      </div>
+
+    </section>
+
+
+
+    <!-- ADDITIONAL ARNOLD RENDERS -->
+
+    <section class="block">
+
+      <h3>
+        Additional Views
+      </h3>
+
+      <div class="prose">
+
+        <p>
+          These additional views were rendered using Arnold in Maya to show
+          the treasure chest and its details from different angles.
+        </p>
+
+      </div>
+
+      <div class="image-grid">
+
+
+        <!-- ARNOLD RENDER 1 -->
+
+        <div>
+
+          <div class="image-placeholder">
+
+            <img
+              src="Treasure Chest/arnold1.jpg"
+              alt="Arnold render showing the treasure chest from a distance">
+
+          </div>
+
+          <p class="image-label">
+            Arnold render, distant view of the chest
+          </p>
+
+        </div>
+
+
+        <!-- ARNOLD RENDER 2 -->
+
+        <div>
+
+          <div class="image-placeholder">
+
+            <img
+              src="Treasure Chest/arnold2.jpg"
+              alt="Arnold render showing a close-up view of the treasure inside the chest">
+
+          </div>
+
+          <p class="image-label">
+            Arnold render, close-up view of the treasure
+          </p>
+
+        </div>
+
+
+        <!-- ARNOLD RENDER 3 -->
+
+        <div>
+
+          <div class="image-placeholder">
+
+            <img
+              src="Treasure Chest/arnold3.jpg"
+              alt="Arnold render showing an aerial view of the treasure chest">
+
+          </div>
+
+          <p class="image-label">
+            Arnold render, aerial view of the chest
+          </p>
+
+        </div>
+
+
+        <!-- ARNOLD RENDER 4 -->
+
+        <div>
+
+          <div class="image-placeholder">
+
+            <img
+              src="Treasure Chest/arnold4.jpg"
+              alt="Arnold render showing the back of the treasure chest">
+
+          </div>
+
+          <p class="image-label">
+            Arnold render, back view of the chest
+          </p>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+
+    <!-- FINAL ANIMATION -->
+
+    <section class="block">
+
+      <h3>
+        Final Animation
+      </h3>
+
+      <div class="frame">
+
+        <video
+          controls
+          preload="metadata"
+          src="Treasure Chest/final_chest.mp4"
+          type="video/mp4">
+        </video>
+
+      </div>
+
+      <p class="frame-cap">
+        Final animation of the completed treasure chest, including the opening
+        animation and treasure inside.
+      </p>
+
+    </section>
+
+
+
+    <!-- MODELING AND SHADING -->
+
+    <section class="block">
+
+      <h3>
+        Modeling &amp; Shading
+      </h3>
+
+      <div class="prose">
+
+        <p>
+          <strong>Modeling:</strong>
+          I built the treasure chest in Maya using polygonal modeling
+          techniques to create the main box, curved lid, and smaller details.
+          I used extrusion and beveling to shape the chest and refine its
+          edges, then adjusted the geometry to create the rounded top and
+          overall proportions. I also modeled the coins, gems, and pearls
+          separately so they could be placed inside the chest.
+        </p>
+
+        <p>
+          <strong>Shading:</strong>
+          I used separate materials for the wooden chest, metal hardware,
+          coins, gems, and pearls to distinguish the different surfaces.
+          I adjusted the materials and lighting to give the objects more
+          depth and detail, and used smooth shading to make the curved parts
+          of the chest and the treasure appear more polished.
+        </p>
+
+        <p>
+          <strong>Treasure:</strong>
+          The treasure was modeled without downloading treasure models from
+          the internet. The final chest contains coins, gems, and pearls.
+        </p>
+
+      </div>
+
+    </section>
+
+
+
+    <!-- PROJECT 2 NOTES -->
+
+    <section class="block">
+
+      <h3>
+        Project Notes
+      </h3>
+
+      <div class="prose">
+
+        <p>
+          This project gave me more experience building a complete object from
+          scratch in Maya and thinking about how separate pieces work together
+          as one model. One of the main challenges was creating the curved lid
+          while keeping the shape smooth and consistent with the rest of the
+          chest. I also had to make sure the chest could open correctly and
+          that the treasure stayed inside during the animation. Adding
+          different materials and smooth shading helped give the final model
+          more detail and made the different parts of the chest and treasure
+          easier to distinguish.
+        </p>
+
+      </div>
+
+    </section>
+
+  </main>
+
+</section>
+
+<!-- =========================================================
+     FOOTER
+========================================================= -->
+
 <footer class="foot wrap">
-  <a href="#top">&uarr; Back to top</a>
-  <a href="mailto:ammorris02">Contact me &mdash; ammorris02@wm.edu</a>
+
+  <a href="#top">
+    &uarr; Back to top
+  </a>
+
+  <a href="#project-1">
+    Project 1
+  </a>
+
+  <a href="#project-2">
+    Project 2
+  </a>
+
+  <a href="mailto:ammorris02@wm.edu">
+    Contact me &mdash; ammorris02@wm.edu
+  </a>
+
 </footer>
 
 </body>
