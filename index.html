@@ -1,5 +1,4 @@
 <!doctype html>
-
 <html lang="en">
 <head>
 <meta charset="UTF-8">
@@ -40,7 +39,6 @@
   a{
     color: var(--burgundy);
   }
-
 
   /* =========================
      HOME / HERO
@@ -93,7 +91,6 @@
     width: fit-content;
     margin-top: 22px;
   }
-
 
   /* =========================
      PROJECTS
@@ -155,7 +152,6 @@
     margin: 0 0 18px;
   }
 
-
   /* =========================
      VIDEO
   ========================= */
@@ -180,9 +176,8 @@
     margin: 10px 2px 22px;
   }
 
-
   /* =========================
-     PROJECT 1 ENHANCEMENTS
+     PROJECT ENHANCEMENTS
   ========================= */
 
   .change{
@@ -210,6 +205,14 @@
     display: block;
   }
 
+  .change__cap{
+    background: var(--cream);
+    color: var(--ink-soft);
+    font-size: 12px;
+    margin: 0;
+    padding: 7px 8px;
+  }
+
   .change__num{
     font-family: 'Fraunces', serif;
     font-style: italic;
@@ -233,7 +236,6 @@
     max-width: 65ch;
   }
 
-
   /* =========================
      PROJECT DIVIDER
   ========================= */
@@ -251,7 +253,6 @@
     font-size: 20px;
   }
 
-
   /* =========================
      PROJECT 2
   ========================= */
@@ -265,6 +266,18 @@
     padding-top: 80px;
   }
 
+  /* =========================
+     PROJECT 3
+  ========================= */
+
+  .project-three{
+    background: var(--cream);
+    border-bottom: 8px solid var(--lime);
+  }
+
+  .project-three .project{
+    padding-top: 80px;
+  }
 
   /* =========================
      IMAGE GRIDS
@@ -297,9 +310,8 @@
     margin: 7px 0 0;
   }
 
-
   /* =========================
-     LARGE PROJECT 2 IMAGES
+     LARGE PROJECT IMAGES
   ========================= */
 
   .large-image{
@@ -332,6 +344,28 @@
     margin-top: 16px;
   }
 
+  /* =========================
+     STORYBOARDS
+  ========================= */
+
+  .storyboard-stack{
+    display: grid;
+    gap: 28px;
+    margin-top: 10px;
+  }
+
+  .storyboard-stack .large-image{
+    min-height: 0;
+    background: var(--paper);
+    border: 1px solid var(--rule);
+  }
+
+  /* Trims the empty white space above and below the whiteboard */
+  .storyboard-stack img.crop-whiteboard{
+    aspect-ratio: 1920 / 540;
+    object-fit: cover;
+    object-position: center 50%;
+  }
 
   /* =========================
      FOOTER
@@ -350,7 +384,6 @@
     text-decoration: none;
     border-bottom: 1px solid var(--burgundy);
   }
-
 
   /* =========================
      MOBILE
@@ -374,7 +407,6 @@
   }
 
 </style>
-
 </head>
 
 <body>
@@ -401,6 +433,10 @@
       Project 2 &mdash; Treasure Chest &rarr;
     </a>
 
+    <a class="cta" href="#project-3">
+      Project 3 &mdash; Bouncy Ball &rarr;
+    </a>
+
   </div>
 
 </section>
@@ -418,8 +454,6 @@
   <h2>
     Project 1 &ndash; Planet Animation
   </h2>
-
-  <!-- PROJECT 1 INFORMATION -->
 
   <div class="byline">
 
@@ -444,35 +478,20 @@
 
   <section class="block">
 
-    <h3>
-      Original tutorial animation
-    </h3>
+    <h3>Original tutorial animation</h3>
 
     <div class="frame">
-
-      <video
-        controls
-        preload="metadata"
-        src="tutorial (2).mp4"
-        type="video/mp4">
-      </video>
-
+      <video controls preload="metadata"
+        src="tutorial (2).mp4" type="video/mp4"></video>
     </div>
 
     <p class="frame-cap">
       Playblast v1 &mdash; the completed tutorial animation, before edits.
     </p>
 
-
     <div class="frame">
-
-      <video
-        controls
-        preload="metadata"
-        src="secondtut.mp4"
-        type="video/mp4">
-      </video>
-
+      <video controls preload="metadata"
+        src="secondtut.mp4" type="video/mp4"></video>
     </div>
 
     <p class="frame-cap">
@@ -485,106 +504,64 @@
 
   <section class="block">
 
-    <h3>
-      Enhancements I made
-    </h3>
-
+    <h3>Enhancements I made</h3>
 
     <div class="change">
 
       <div class="change__figure">
-
-        <img
-          src="texture.png"
+        <img src="texture.png"
           alt="Rendered still showing the updated planet textures">
-
       </div>
 
       <div>
-
-        <p class="change__num">
-          Enhancement 01
-        </p>
-
-        <h4>
-          Planet textures
-        </h4>
-
+        <p class="change__num">Enhancement 01</p>
+        <h4>Planet textures</h4>
         <p>
           I replaced the default planet materials with higher-resolution
           textures from
-          <a
-            href="https://www.solarsystemscope.com/textures/"
-            target="_blank"
-            rel="noopener">
-            solarsystemscope.com
-          </a>,
+          <a href="https://www.solarsystemscope.com/textures/"
+            target="_blank" rel="noopener">solarsystemscope.com</a>,
           giving each planet realistic surface color and detail instead of
           flat shading.
         </p>
-
       </div>
 
     </div>
 
-
     <div class="change">
 
       <div class="change__figure">
-
-        <img
-          src="shading.jpg"
+        <img src="shading.jpg"
           alt="Rendered still showing the sun as the light source">
-
       </div>
 
       <div>
-
-        <p class="change__num">
-          Enhancement 02
-        </p>
-
-        <h4>
-          Sun as the light source
-        </h4>
-
+        <p class="change__num">Enhancement 02</p>
+        <h4>Sun as the light source</h4>
         <p>
           Using Maya's illumination settings, I set the sun as the scene's
           light source so each planet is lit and shadowed the way it would be
           from actual sunlight.
         </p>
-
       </div>
 
     </div>
 
-
     <div class="change">
 
       <div class="change__figure">
-
-        <img
-          src="position.png"
+        <img src="position.png"
           alt="Rendered still showing the updated planet positions and orbit speeds">
-
       </div>
 
       <div>
-
-        <p class="change__num">
-          Enhancement 03
-        </p>
-
-        <h4>
-          Planet position and speed
-        </h4>
-
+        <p class="change__num">Enhancement 03</p>
+        <h4>Planet position and speed</h4>
         <p>
           I adjusted the position and orbit speed of each planet so their
           spacing and motion better reflect their real relative distances
           and speeds in the solar system.
         </p>
-
       </div>
 
     </div>
@@ -595,19 +572,11 @@
 
   <section class="block">
 
-    <h3>
-      Modified animation
-    </h3>
+    <h3>Modified animation</h3>
 
     <div class="frame">
-
-      <video
-        controls
-        preload="metadata"
-        src="Untitled design (4).mp4"
-        type="video/mp4">
-      </video>
-
+      <video controls preload="metadata"
+        src="Untitled design (4).mp4" type="video/mp4"></video>
     </div>
 
     <p class="frame-cap">
@@ -620,15 +589,12 @@
 
   <section class="block">
 
-    <h3>
-      Notes
-    </h3>
+    <h3>Notes</h3>
 
     <div class="prose">
-
       <p>
         The textures made the biggest visual difference. By swapping in real
-        planetary surface maps, immediately the scene felt less like an
+        planetary surface maps, immediately the scene felt less like a
         placeholder and more like an actual solar system. The process of
         switching the light source to the sun took a bit of trial and error
         in Maya to get the shadows falling naturally on each planet, but it
@@ -636,7 +602,6 @@
         Finally, adjusting the position and speed of the planets last tied
         everything together and made the orbits feel more intentional.
       </p>
-
     </div>
 
   </section>
@@ -644,20 +609,14 @@
 </main>
 
 <!-- =========================================================
-     PROJECT DIVIDER
+     PROJECT DIVIDER 1 / 2
 ========================================================= -->
 
 <div class="project-divider">
 
-  <span>
-    Project 1 &nbsp;&middot;&nbsp; Planet Animation
-  </span>
-
+  <span>Project 1 &nbsp;&middot;&nbsp; Planet Animation</span>
   &nbsp;&mdash;&nbsp;
-
-  <span>
-    Project 2 &nbsp;&middot;&nbsp; Treasure Chest
-  </span>
+  <span>Project 2 &nbsp;&middot;&nbsp; Treasure Chest</span>
 
 </div>
 
@@ -673,12 +632,7 @@
       Computer Animation &middot; Project 2
     </p>
 
-    <h2>
-      Project 2 &ndash; Treasure Chest
-    </h2>
-
-
-    <!-- PROJECT 2 INFORMATION -->
+    <h2>Project 2 &ndash; Treasure Chest</h2>
 
     <div class="byline">
 
@@ -697,192 +651,100 @@
         Treasure Chest
       </div>
 
-      <div>
-        <span>Course</span>
-        CSCI 417 &middot; Computer Animation
-      </div>
-
     </div>
-
-
 
     <!-- SOURCE IMAGES -->
 
     <section class="block">
 
-      <h3>
-        Source Images &amp; References
-      </h3>
+      <h3>Source Images &amp; References</h3>
 
       <div class="image-grid">
 
-
-        <!-- REFERENCE IMAGE 1 -->
-
         <div>
-
           <div class="image-placeholder">
-
-            <img
-              src="Treasure Chest/Pirate chest.jpg"
+            <img src="Treasure Chest/Pirate chest.jpg"
               alt="Smaller pirate chest with a rounded top">
-
           </div>
-
           <p class="image-label">
             Smaller pirate chest with a rounded top, used as a reference for
             the curved shape of the chest.
           </p>
-
         </div>
 
-
-        <!-- REFERENCE IMAGE 2 -->
-
         <div>
-
           <div class="image-placeholder">
-
-            <img
-              src="Treasure Chest/Large_Treasure_Chest.jpg"
+            <img src="Treasure Chest/Large_Treasure_Chest.jpg"
               alt="Larger box-shaped treasure chest">
-
           </div>
-
           <p class="image-label">
             Larger treasure chest with a more box-like shape, used as a
             reference for the overall structure and proportions.
           </p>
-
         </div>
 
       </div>
 
-
       <p class="source-credit">
-
-        <a
-          href="https://syncwish.juketpd.sbs/index.php?main_page=product_info&products_id=157552"
-          target="_blank"
-          rel="noopener">
-          Reference image source
-        </a>
-
+        <a href="https://syncwish.juketpd.sbs/index.php?main_page=product_info&amp;products_id=157552"
+          target="_blank" rel="noopener">Reference image source</a>
       </p>
 
     </section>
-
-
 
     <!-- MODEL IMAGES -->
 
     <section class="block">
 
-      <h3>
-        Treasure Chest Model
-      </h3>
+      <h3>Treasure Chest Model</h3>
 
       <div class="image-grid">
 
-
-        <!-- FRONT -->
-
         <div>
-
           <div class="image-placeholder">
-
-            <img
-              src="Treasure Chest/front_view.jpg"
+            <img src="Treasure Chest/front_view.jpg"
               alt="Front view of the smooth-shaded treasure chest model">
-
           </div>
-
-          <p class="image-label">
-            Front view
-          </p>
-
+          <p class="image-label">Front view</p>
         </div>
 
-
-        <!-- BACK -->
-
         <div>
-
           <div class="image-placeholder">
-
-            <img
-              src="Treasure Chest/back_view.jpg"
+            <img src="Treasure Chest/back_view.jpg"
               alt="Back view of the smooth-shaded treasure chest model">
-
           </div>
-
-          <p class="image-label">
-            Back view
-          </p>
-
+          <p class="image-label">Back view</p>
         </div>
 
-
-        <!-- RIGHT -->
-
         <div>
-
           <div class="image-placeholder">
-
-            <img
-              src="Treasure Chest/right_view.jpg"
+            <img src="Treasure Chest/right_view.jpg"
               alt="Right view of the smooth-shaded treasure chest model">
-
           </div>
-
-          <p class="image-label">
-            Right view
-          </p>
-
+          <p class="image-label">Right view</p>
         </div>
 
-
-        <!-- LEFT -->
-
         <div>
-
           <div class="image-placeholder">
-
-            <img
-              src="Treasure Chest/left_view.jpg"
+            <img src="Treasure Chest/left_view.jpg"
               alt="Left view of the smooth-shaded treasure chest model">
-
           </div>
-
-          <p class="image-label">
-            Left view
-          </p>
-
+          <p class="image-label">Left view</p>
         </div>
 
       </div>
 
     </section>
 
-
-
     <!-- CLOSED CHEST -->
 
     <section class="block">
 
-      <h3>
-        Closed Chest
-      </h3>
+      <h3>Closed Chest</h3>
 
       <div class="large-image">
-
-        <video
-          controls
-          preload="metadata"
-          src="Treasure Chest/closed_chest.mp4"
-          type="video/mp4">
-        </video>
-
+        <video controls preload="metadata"
+          src="Treasure Chest/closed_chest.mp4" type="video/mp4"></video>
       </div>
 
       <p class="frame-cap">
@@ -892,31 +754,20 @@
 
     </section>
 
-
-
     <!-- OPEN CHEST -->
 
     <section class="block">
 
-      <h3>
-        Open Chest &amp; Treasure
-      </h3>
+      <h3>Open Chest &amp; Treasure</h3>
 
       <div class="large-image">
-
-        <video
-          controls
-          preload="metadata"
-          src="Treasure Chest/open_chest.mp4"
-          type="video/mp4">
-        </video>
-
+        <video controls preload="metadata"
+          src="Treasure Chest/open_chest.mp4" type="video/mp4"></video>
       </div>
 
       <p class="frame-cap">
         Smooth-shaded render of the treasure chest opened with treasure inside.
       </p>
-
 
       <div class="prose">
 
@@ -926,12 +777,8 @@
 
         <p>
           I did not download any treasure models from the internet. I used an
-          <a
-            href="https://stock.adobe.com/search?k=open+treasure+chest+filled+with+gold+coins"
-            target="_blank"
-            rel="noopener">
-            Adobe Stock search
-          </a>
+          <a href="https://stock.adobe.com/search?k=open+treasure+chest+filled+with+gold+coins"
+            target="_blank" rel="noopener">Adobe Stock search</a>
           for minor inspiration, mainly to look at photographs of real treasure
           chests and see what is typically found inside them, rather than using
           clipart or AI-generated artwork as a reference.
@@ -941,126 +788,66 @@
 
     </section>
 
-
-
     <!-- ADDITIONAL ARNOLD RENDERS -->
 
     <section class="block">
 
-      <h3>
-        Additional Views
-      </h3>
+      <h3>Additional Views</h3>
 
       <div class="prose">
-
         <p>
           These additional views were rendered using Arnold in Maya to show
           the treasure chest and its details from different angles.
         </p>
-
       </div>
 
       <div class="image-grid">
 
-
-        <!-- ARNOLD RENDER 1 -->
-
         <div>
-
           <div class="image-placeholder">
-
-            <img
-              src="Treasure Chest/arnold1.jpg"
+            <img src="Treasure Chest/arnold1.jpg"
               alt="Arnold render showing the treasure chest from a distance">
-
           </div>
-
-          <p class="image-label">
-            Arnold render, distant view of the chest
-          </p>
-
+          <p class="image-label">Arnold render, distant view of the chest</p>
         </div>
 
-
-        <!-- ARNOLD RENDER 2 -->
-
         <div>
-
           <div class="image-placeholder">
-
-            <img
-              src="Treasure Chest/arnold2.jpg"
+            <img src="Treasure Chest/arnold2.jpg"
               alt="Arnold render showing a close-up view of the treasure inside the chest">
-
           </div>
-
-          <p class="image-label">
-            Arnold render, close-up view of the treasure
-          </p>
-
+          <p class="image-label">Arnold render, close-up view of the treasure</p>
         </div>
 
-
-        <!-- ARNOLD RENDER 3 -->
-
         <div>
-
           <div class="image-placeholder">
-
-            <img
-              src="Treasure Chest/arnold3.jpg"
+            <img src="Treasure Chest/arnold3.jpg"
               alt="Arnold render showing an aerial view of the treasure chest">
-
           </div>
-
-          <p class="image-label">
-            Arnold render, aerial view of the chest
-          </p>
-
+          <p class="image-label">Arnold render, aerial view of the chest</p>
         </div>
 
-
-        <!-- ARNOLD RENDER 4 -->
-
         <div>
-
           <div class="image-placeholder">
-
-            <img
-              src="Treasure Chest/arnold4.jpg"
+            <img src="Treasure Chest/arnold4.jpg"
               alt="Arnold render showing the back of the treasure chest">
-
           </div>
-
-          <p class="image-label">
-            Arnold render, back view of the chest
-          </p>
-
+          <p class="image-label">Arnold render, back view of the chest</p>
         </div>
 
       </div>
 
     </section>
 
-
-
     <!-- FINAL ANIMATION -->
 
     <section class="block">
 
-      <h3>
-        Final Animation
-      </h3>
+      <h3>Final Animation</h3>
 
       <div class="frame">
-
-        <video
-          controls
-          preload="metadata"
-          src="Treasure Chest/final_chest.mp4"
-          type="video/mp4">
-        </video>
-
+        <video controls preload="metadata"
+          src="Treasure Chest/final_chest.mp4" type="video/mp4"></video>
       </div>
 
       <p class="frame-cap">
@@ -1070,15 +857,11 @@
 
     </section>
 
-
-
     <!-- MODELING AND SHADING -->
 
     <section class="block">
 
-      <h3>
-        Modeling &amp; Shading
-      </h3>
+      <h3>Modeling &amp; Shading</h3>
 
       <div class="prose">
 
@@ -1111,18 +894,13 @@
 
     </section>
 
-
-
     <!-- PROJECT 2 NOTES -->
 
     <section class="block">
 
-      <h3>
-        Project Notes
-      </h3>
+      <h3>Project Notes</h3>
 
       <div class="prose">
-
         <p>
           This project gave me more experience building a complete object from
           scratch in Maya and thinking about how separate pieces work together
@@ -1134,7 +912,300 @@
           more detail and made the different parts of the chest and treasure
           easier to distinguish.
         </p>
+      </div>
 
+    </section>
+
+  </main>
+
+</section>
+
+<!-- =========================================================
+     PROJECT DIVIDER 2 / 3
+========================================================= -->
+
+<div class="project-divider">
+
+  <span>Project 2 &nbsp;&middot;&nbsp; Treasure Chest</span>
+  &nbsp;&mdash;&nbsp;
+  <span>Project 3 &nbsp;&middot;&nbsp; Bouncy Ball</span>
+
+</div>
+
+<!-- =========================================================
+     PROJECT 3
+========================================================= -->
+
+<section class="project-three" id="project-3">
+
+  <main class="project wrap">
+
+    <p class="project__kicker">
+      Computer Animation &middot; Project 3
+    </p>
+
+    <h2>Project 3 &ndash; Bouncy Ball</h2>
+
+    <!-- PROJECT 3 INFORMATION -->
+
+    <div class="byline">
+
+      <div>
+        <span>Name</span>
+        Allyson Morris
+      </div>
+
+      <div>
+        <span>Date</span>
+        10/14/2026
+      </div>
+
+      <div>
+        <span>Project</span>
+        Bouncy Ball
+      </div>
+
+    </div>
+
+    <!-- STORYBOARD AND DESCRIPTION -->
+
+    <section class="block">
+
+      <h3>Storyboard &amp; Animation Description</h3>
+
+      <div class="prose">
+
+        <p>
+          <!-- Replace this paragraph with your actual animation story. -->
+          My animation follows a bouncing ball as it moves through the scene.
+          The ball interacts with its surroundings and uses changes in speed,
+          direction, and shape to make the movement feel natural and expressive.
+        </p>
+
+        <p>
+          The animation focuses on realistic, physics-based movement while
+          incorporating squash and stretch, timing, and other principles of
+          animation to give the ball personality.
+        </p>
+
+      </div>
+
+      <div class="storyboard-stack">
+
+        <div>
+          <div class="large-image">
+            <img src="StoryboardTemplate.pdf (1).png"
+              alt="Six-panel storyboard showing the ball hopping across the mesa, getting blocked by the tree, launching off the tree arm, and splashing into the puddle below">
+          </div>
+          <p class="image-label">
+            Storyboard 1 &mdash; six-panel shot breakdown.
+            <a href="https://canva.link/wn1chotypn8ktsx"
+              target="_blank" rel="noopener">View on Canva</a>
+          </p>
+        </div>
+
+        <div>
+          <div class="large-image">
+            <img class="crop-whiteboard"
+              src="Interactive Storyboard Creation Whiteboard in Dark Blue Grey Sleek Professional Style (1).png"
+              alt="Storyboard whiteboard with ideation notes, shot-by-shot creation panels, and desert visual inspiration photos">
+          </div>
+          <p class="image-label">
+            Storyboard 2 &mdash; ideation, shot creation, and visual inspiration board.
+            <a href="https://canva.link/bmy5yxqldgtp438"
+              target="_blank" rel="noopener">View on Canva</a>
+          </p>
+        </div>
+
+      </div>
+
+    </section>
+
+    <!-- DISNEY PRINCIPLES -->
+
+    <section class="block">
+
+      <h3>Disney Principles of Animation</h3>
+
+      <div class="prose">
+        <p>
+          The following principles are demonstrated in my animation. Each
+          helps make the ball's movement more believable and visually
+          interesting.
+        </p>
+      </div>
+
+      <!-- PRINCIPLE 1 -->
+
+      <div class="change">
+
+        <div class="change__figure">
+          <img src="squash and stretch.jpg"
+            alt="The ball squashing and stretching mid-fall">
+          <p class="change__cap">The ball squashing and stretching mid-fall.</p>
+        </div>
+
+        <div>
+          <p class="change__num">Principle 01</p>
+          <h4>Squash and Stretch</h4>
+          <p>
+            The ball changes shape as it hits the ground and rebounds.
+            It squashes on impact and stretches as it moves through the air,
+            emphasizing the force and speed of the movement.
+          </p>
+        </div>
+
+      </div>
+
+      <!-- PRINCIPLE 2 -->
+
+      <div class="change">
+
+        <div class="change__figure">
+          <img src="anticipation.jpg"
+            alt="The ball mid-jump, trying to make it over the tree">
+          <p class="change__cap">The ball mid-jump, trying to make it over the tree.</p>
+        </div>
+
+        <div>
+          <p class="change__num">Principle 02</p>
+          <h4>Anticipation</h4>
+          <p>
+            Each time the ball jumps at the tree, it builds anticipation
+            because we don't know whether it will make it over. The repeated
+            attempts keep the viewer waiting to see if the next jump will
+            finally work.
+          </p>
+        </div>
+
+      </div>
+
+      <!-- PRINCIPLE 3 -->
+
+      <div class="change">
+
+        <div class="change__figure">
+          <img src="time_and_spacing.jpg"
+            alt="The ball sweating and moving slowly before it sees the water">
+          <p class="change__cap">The ball sweating and moving slowly before it sees the water.</p>
+        </div>
+
+        <div>
+          <p class="change__num">Principle 03</p>
+          <h4>Timing and Spacing</h4>
+          <p>
+            At the start, the ball moves slowly because it is tired and has
+            no water. Once it spots the puddle, its timing speeds up and it
+            moves faster, jumping with excitement as it tries to reach the
+            water.
+          </p>
+        </div>
+
+      </div>
+
+    </section>
+
+    <!-- STILL IMAGES -->
+
+    <section class="block">
+
+      <h3>Still Images from the Animation</h3>
+
+      <div class="image-grid">
+
+        <div>
+          <div class="image-placeholder">
+            <img src="beginning image.jpg"
+              alt="Bouncing ball at the beginning of the animation">
+          </div>
+          <p class="image-label">Beginning of the animation</p>
+        </div>
+
+        <div>
+          <div class="image-placeholder">
+            <img src="ball in air.jpg"
+              alt="Bouncing ball at the highest point of a jump">
+          </div>
+          <p class="image-label">Ball in the air</p>
+        </div>
+
+        <div>
+          <div class="image-placeholder">
+            <img src="impact.jpg"
+              alt="Bouncing ball making contact with the ground">
+          </div>
+          <p class="image-label">Impact and squash</p>
+        </div>
+
+        <div>
+          <div class="image-placeholder">
+            <img src="stretching.jpg"
+              alt="Bouncing ball stretching during movement">
+          </div>
+          <p class="image-label">Stretch during movement</p>
+        </div>
+
+      </div>
+
+    </section>
+
+    <!-- FINAL ANIMATION -->
+
+    <section class="block">
+
+      <h3>Final Animation</h3>
+
+      <div class="frame">
+        <video controls preload="metadata"
+          src="ball_animation1.mp4"
+          type="video/mp4"></video>
+      </div>
+
+      <p class="frame-cap">
+        Final completed bouncy ball animation.
+        <a href="https://canva.link/2mga3m5rc0tjuwv"
+          target="_blank" rel="noopener">Alternate viewing option</a>
+      </p>
+
+    </section>
+
+    <!-- SHADING -->
+
+    <section class="block">
+
+      <h3>Shading &amp; Lighting</h3>
+
+      <div class="prose">
+        <p>
+          <!-- Replace with details about your actual materials and lighting. -->
+          I used materials and lighting in Maya to give the ball a more
+          finished appearance and help it stand out from the environment.
+          The shading adds depth to the scene and makes the ball easier
+          to follow throughout the animation.
+        </p>
+      </div>
+
+      <div class="large-image">
+        <img src="shiny.jpg"
+          alt="Rendered still showing the ball's materials and lighting">
+      </div>
+
+      <p class="image-label">
+        Render showing the ball's shading and lighting.
+      </p>
+
+    </section>
+
+    <!-- PROJECT 3 NOTES -->
+
+    <section class="block">
+
+      <h3>Project Notes</h3>
+
+      <div class="prose">
+        <p>
+          This project helped me understand how much personality and emotion can come from animating even a simple object. I learned how to use timing, anticipation, and squash and stretch to make movement feel more expressive, rather than just physically accurate. I also explored how to guide the viewer's attention and build toward a payoff through movement and pacing. One of my biggest takeaways was how much small details can change the way an animation feels and how important it is to think about the story behind the movement, not just the movement itself.
+        </p>
       </div>
 
     </section>
@@ -1149,17 +1220,13 @@
 
 <footer class="foot wrap">
 
-  <a href="#top">
-    &uarr; Back to top
-  </a>
+  <a href="#top">&uarr; Back to top</a>
 
-  <a href="#project-1">
-    Project 1
-  </a>
+  <a href="#project-1">Project 1</a>
 
-  <a href="#project-2">
-    Project 2
-  </a>
+  <a href="#project-2">Project 2</a>
+
+  <a href="#project-3">Project 3</a>
 
   <a href="mailto:ammorris02@wm.edu">
     Contact me &mdash; ammorris02@wm.edu
