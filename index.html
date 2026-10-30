@@ -280,6 +280,13 @@
   }
 
   /* =========================
+     PROJECT 4
+  ========================= */
+
+  .project-four{ background: var(--paper); border-bottom: 8px solid var(--burgundy); }
+  .project-four .project{ padding-top: 80px; }
+
+  /* =========================
      IMAGE GRIDS
   ========================= */
 
@@ -391,6 +398,16 @@
 
   @media (max-width: 640px){
 
+    /* keep text and images off the screen edges on phones */
+    .project.wrap{
+      padding-left: 20px;
+      padding-right: 20px;
+    }
+
+    .byline{
+      gap: 18px 28px;
+    }
+
     .change{
       grid-template-columns: 1fr;
     }
@@ -435,6 +452,10 @@
 
     <a class="cta" href="#project-3">
       Project 3 &mdash; Bouncy Ball &rarr;
+    </a>
+
+    <a class="cta" href="#project-4">
+      Project 4 &mdash; Rube Goldberg Machine &rarr;
     </a>
 
   </div>
@@ -1215,6 +1236,334 @@
 </section>
 
 <!-- =========================================================
+     PROJECT DIVIDER 3 / 4
+========================================================= -->
+
+<div class="project-divider">
+
+  <span>Project 3 &nbsp;&middot;&nbsp; Bouncy Ball</span>
+  &nbsp;&mdash;&nbsp;
+  <span>Project 4 &nbsp;&middot;&nbsp; Rube Goldberg Machine</span>
+
+</div>
+
+<!-- =========================================================
+     PROJECT 4
+========================================================= -->
+
+<section class="project-four" id="project-4">
+
+  <main class="project wrap">
+
+    <p class="project__kicker">
+      Computer Animation &middot; Project 4
+    </p>
+
+    <h2>Project 4 &ndash; Rube Goldberg Machine</h2>
+
+    <!-- PROJECT 4 INFORMATION -->
+
+    <div class="byline">
+
+      <div>
+        <span>Name</span>
+        Allyson Morris
+      </div>
+
+      <div>
+        <span>Date</span>
+        10/29/2026
+      </div>
+
+      <div>
+        <span>Project</span>
+        Rube Goldberg Machine
+      </div>
+
+    </div>
+
+    <!-- DESCRIPTION -->
+
+    <section class="block">
+
+      <h3>Animation Description</h3>
+
+      <div class="prose">
+        <p>
+          My Rube Goldberg machine takes place in a vintage kitchen in the morning.
+          An alarm clock goes off and starts a chain reaction across the counter that
+          ends with the toaster popping up the toast.
+        </p>
+      </div>
+
+    </section>
+
+    <!-- STORYBOARDS -->
+
+    <section class="block">
+
+      <h3>Storyboard</h3>
+
+      <div class="image-grid">
+
+        <div>
+          <div class="image-placeholder">
+            <img src="Storyboard Image 1.png"
+              alt="Storyboard panel 1: The alarm clock rings, tumbling down onto the wood block and bumping the orange">
+          </div>
+          <p class="image-label">1. The alarm clock rings, tumbling down onto the wood block and bumping the orange.</p>
+        </div>
+
+        <div>
+          <div class="image-placeholder">
+            <img src="Storyboard Image 2.png"
+              alt="Storyboard panel 2: The orange now begins to roll down the cutting board, which is propped up by a cheese grater">
+          </div>
+          <p class="image-label">2. The orange now begins to roll down the cutting board, which is propped up by a cheese grater.</p>
+        </div>
+
+        <div>
+          <div class="image-placeholder">
+            <img src="Storyboard Image 3.png"
+              alt="Storyboard panel 3: The orange reaches the bottom of the cutting board, bumping into the pepper grinder">
+          </div>
+          <p class="image-label">3. The orange reaches the bottom of the cutting board, bumping into the pepper grinder.</p>
+        </div>
+
+        <div>
+          <div class="image-placeholder">
+            <img src="Storyboard Image 4.png"
+              alt="Storyboard panel 4: The pepper grinder crashes into the rolling pin, which quickly begins to roll">
+          </div>
+          <p class="image-label">4. The pepper grinder crashes into the rolling pin, which quickly begins to roll.</p>
+        </div>
+
+        <div>
+          <div class="image-placeholder">
+            <img src="Storyboard Image 5.png"
+              alt="Storyboard panel 5: The rolling pin creates a domino effect with the mini cereal boxes, milk, and cookbook">
+          </div>
+          <p class="image-label">5. The rolling pin creates a domino effect with the mini cereal boxes, milk, and cookbook.</p>
+        </div>
+
+        <div>
+          <div class="image-placeholder">
+            <img src="Storyboard Image 6.png"
+              alt="Storyboard panel 6: The cookbook hits the toaster lever and the toast pops, with the toast landing on a nearby plate">
+          </div>
+          <p class="image-label">6. The cookbook hits the toaster lever and the toast pops, with the toast landing on a nearby plate.</p>
+        </div>
+
+      </div>
+
+      <p class="source-credit">
+        <a href="https://canva.link/4cbeh1k7od9ypj4"
+          target="_blank" rel="noopener">View storyboard on Canva</a>
+      </p>
+
+    </section>
+
+    <!-- OBJECTS -->
+
+    <section class="block">
+
+      <h3>Machine Objects</h3>
+
+      <div class="image-grid">
+
+        <div>
+          <div class="image-placeholder">
+            <img src="alarm clock.jpg"
+              alt="Rendered image of the alarm clock">
+          </div>
+          <p class="image-label">1. Alarm clock</p>
+        </div>
+
+        <div>
+          <div class="image-placeholder">
+            <img src="obj_orange.jpg"
+              alt="Rendered image of the orange">
+          </div>
+          <p class="image-label">2. Orange</p>
+        </div>
+
+        <div>
+          <div class="image-placeholder">
+            <img src="cutting board.jpg"
+              alt="Rendered image of the cutting board ramp">
+          </div>
+          <p class="image-label">3. Cutting board ramp</p>
+        </div>
+
+        <div>
+          <div class="image-placeholder">
+            <img src="pepper grinder.jpg"
+              alt="Rendered image of the pepper grinder">
+          </div>
+          <p class="image-label">4. Pepper grinder</p>
+        </div>
+
+        <div>
+          <div class="image-placeholder">
+            <img src="rolling pin.jpg"
+              alt="Rendered image of the rolling pin">
+          </div>
+          <p class="image-label">5. Rolling pin</p>
+        </div>
+
+        <div>
+          <div class="image-placeholder">
+            <img src="cereal boxes.jpg"
+              alt="Rendered image of the cereal boxes">
+          </div>
+          <p class="image-label">6. Cereal boxes</p>
+        </div>
+
+        <div>
+          <div class="image-placeholder">
+            <img src="Milk.jpg"
+              alt="Rendered image of the milk carton">
+          </div>
+          <p class="image-label">7. Milk carton</p>
+        </div>
+
+        <div>
+          <div class="image-placeholder">
+            <img src="cookbook.jpg"
+              alt="Rendered image of the cookbook">
+          </div>
+          <p class="image-label">8. Cookbook</p>
+        </div>
+
+        <div>
+          <div class="image-placeholder">
+            <img src="toast flips.jpg"
+              alt="Rendered image of the toaster and toast">
+          </div>
+          <p class="image-label">9. Toaster and toast</p>
+        </div>
+
+      </div>
+
+    </section>
+
+    <!-- STILL IMAGES -->
+
+    <section class="block">
+
+      <h3>Still Images from the Animation</h3>
+
+      <div class="image-grid">
+
+        <div>
+          <div class="image-placeholder">
+            <img src="Falling clock.jpg"
+              alt="Alarm clock falling off the windowsill">
+          </div>
+          <p class="image-label">Alarm clock falls</p>
+        </div>
+
+        <div>
+          <div class="image-placeholder">
+            <img src="orange rolling.jpg"
+              alt="Orange rolling down the cutting board">
+          </div>
+          <p class="image-label">Orange rolls down the ramp</p>
+        </div>
+
+        <div>
+          <div class="image-placeholder">
+            <img src="falling cereal.jpg"
+              alt="Cereal boxes falling like dominoes">
+          </div>
+          <p class="image-label">Cereal boxes fall</p>
+        </div>
+
+        <div>
+          <div class="image-placeholder">
+            <img src="toaster and toast.jpg"
+              alt="Toast popping out of the toaster">
+          </div>
+          <p class="image-label">Toast pops up</p>
+        </div>
+
+      </div>
+
+    </section>
+
+    <!-- SHADING AND LIGHTING -->
+
+    <section class="block">
+
+      <h3>Lighting, Shading &amp; Rendering</h3>
+
+      <div class="prose">
+        <p>
+          I used a warm directional light for the morning sun and an Arnold sky dome
+          for the outside. Each object has its own material, and the final animation
+          was rendered in Arnold.
+        </p>
+      </div>
+
+    </section>
+
+    <!-- PLAYBLAST -->
+
+    <section class="block">
+
+      <h3>Playblast</h3>
+
+      <div class="frame">
+        <video controls preload="metadata"
+          src="project 4 playblast (converted by happyscribe.com).mp4" type="video/mp4"></video>
+      </div>
+
+      <p class="frame-cap">
+        Playblast of final animation.
+      </p>
+
+    </section>
+
+    <!-- RENDERED ANIMATION -->
+
+    <section class="block">
+
+      <h3>Rendered Animation</h3>
+
+      <div class="frame">
+        <video controls preload="metadata"
+          src="good_morning_machine.mp4" type="video/mp4"></video>
+      </div>
+
+      <p class="frame-cap">
+        Final animation rendered in Arnold.
+      </p>
+
+    </section>
+
+    <!-- PROJECT 4 NOTES -->
+
+    <section class="block">
+
+      <h3>Project Notes</h3>
+
+      <div class="prose">
+        <p>
+          This project taught me how much every step of a Rube Goldberg machine depends
+          on the one before it. Small changes, like where the alarm clock landed, changed
+          the timing of everything after it. Using Maya's gravity made the objects fall
+          naturally, and having the camera follow each object made the chain reaction
+          easy to watch from start to finish.
+        </p>
+      </div>
+
+    </section>
+
+  </main>
+
+</section>
+
+<!-- =========================================================
      FOOTER
 ========================================================= -->
 
@@ -1227,6 +1576,8 @@
   <a href="#project-2">Project 2</a>
 
   <a href="#project-3">Project 3</a>
+
+  <a href="#project-4">Project 4</a>
 
   <a href="mailto:ammorris02@wm.edu">
     Contact me &mdash; ammorris02@wm.edu
