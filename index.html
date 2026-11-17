@@ -287,6 +287,85 @@
   .project-four .project{ padding-top: 80px; }
 
   /* =========================
+     PROJECT 5
+  ========================= */
+
+  .project-five{ background: var(--cream); border-bottom: 8px solid var(--lime); }
+  .project-five .project{ padding-top: 80px; }
+
+  .code{
+    background: var(--ink);
+    color: var(--paper);
+    font-family: Consolas, 'Courier New', monospace;
+    font-size: 13px;
+    line-height: 1.5;
+    padding: 18px 20px;
+    overflow-x: auto;
+    margin: 18px 0 8px;
+    border-left: 4px solid var(--lime);
+  }
+
+  .even-grid .image-placeholder{
+    aspect-ratio: 16 / 9;
+    min-height: 0;
+  }
+
+  .even-grid .image-placeholder img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .prose p.one-line{
+    max-width: none;
+  }
+
+  .compare-grid{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 18px;
+    align-items: center;
+    margin-top: 20px;
+  }
+
+  .compare-grid img{
+    display: block;
+    width: 100%;
+    height: auto;
+    border: 1px solid var(--ink);
+  }
+
+  .change .code{
+    font-size: 12px;
+    margin-top: 14px;
+  }
+
+  .resource-list{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  .resource-list li{
+    padding: 14px 0;
+    border-top: 1px solid var(--rule);
+  }
+
+  .resource-list li:first-child{
+    border-top: none;
+  }
+
+  .resource-list a{
+    font-family: 'Fraunces', serif;
+    font-size: 18px;
+  }
+
+  .resource-list p{
+    margin: 4px 0 0;
+    color: var(--ink-soft);
+  }
+
+  /* =========================
      IMAGE GRIDS
   ========================= */
 
@@ -412,7 +491,8 @@
       grid-template-columns: 1fr;
     }
 
-    .image-grid{
+    .image-grid,
+    .compare-grid{
       grid-template-columns: 1fr;
     }
 
@@ -456,6 +536,10 @@
 
     <a class="cta" href="#project-4">
       Project 4 &mdash; Rube Goldberg Machine &rarr;
+    </a>
+
+    <a class="cta" href="#project-5">
+      Project 5 &mdash; Domino Reveal &rarr;
     </a>
 
   </div>
@@ -1564,6 +1648,513 @@
 </section>
 
 <!-- =========================================================
+     PROJECT DIVIDER 4 / 5
+========================================================= -->
+
+<div class="project-divider">
+
+  <span>Project 4 &nbsp;&middot;&nbsp; Rube Goldberg Machine</span>
+  &nbsp;&mdash;&nbsp;
+  <span>Project 5 &nbsp;&middot;&nbsp; Domino Reveal</span>
+
+</div>
+
+<!-- =========================================================
+     PROJECT 5
+========================================================= -->
+
+<section class="project-five" id="project-5">
+
+  <main class="project wrap">
+
+    <p class="project__kicker">
+      Computer Animation &middot; Project 5
+    </p>
+
+    <h2>Project 5 &ndash; Domino Reveal</h2>
+
+    <!-- PROJECT 5 INFORMATION -->
+
+    <div class="byline">
+
+      <div>
+        <span>Name</span>
+        Allyson Morris
+      </div>
+
+      <div>
+        <span>Date</span>
+        11/18/2026
+      </div>
+
+      <div>
+        <span>Project</span>
+        Python Scripting
+      </div>
+
+    </div>
+
+    <!-- DESCRIPTION -->
+
+    <section class="block">
+
+      <h3>Animation Description</h3>
+
+      <div class="prose">
+        <p>
+          For this project, I wrote a Python script in Maya that
+          builds a grid of dominoes and knocks them over to reveal an
+          image. When the script runs, it asks the user to choose an
+          image and uses the image's dimensions to decide how many
+          rows and columns of dominoes to create. Each domino is then
+          colored on one face to match the part of the image it sits
+          on. Because the dominoes start out a plain ivory color, the
+          image stays hidden until they fall and the colored faces
+          land facing up.
+        </p>
+
+        <p>
+          The camera begins low beside the dominoes as the chain
+          reaction starts and then pulls up to an overhead view, so
+          the full image can be seen once everything has fallen.
+          Everything in the scene, from the dominoes to the floor,
+          lights, and camera, is created by the script.
+        </p>
+      </div>
+
+    </section>
+
+    <!-- ORIGINAL IMAGE -->
+
+    <section class="block">
+
+      <h3>Original Image</h3>
+
+      <div class="prose">
+        <p class="one-line">
+          I used Piet Mondrian's <em>Composition with Large Red Plane, Yellow,
+          Black, Gray and Blue</em> (1921).
+        </p>
+      </div>
+
+      <div class="compare-grid">
+
+        <div>
+          <img src="Mondrian Composition in Red Blue and Yellow.jpg"
+            alt="Piet Mondrian's Composition with Large Red Plane, Yellow, Black, Gray and Blue">
+          <p class="image-label">The original painting</p>
+        </div>
+
+        <div>
+          <img src="dominos post falling.jpg"
+            alt="The same painting made out of fallen dominoes">
+          <p class="image-label">The painting in dominoes</p>
+        </div>
+
+      </div>
+
+    </section>
+
+    <!-- FINAL ANIMATION -->
+
+    <section class="block">
+
+      <h3>Final Animation</h3>
+
+      <div class="frame">
+        <video controls preload="metadata"
+          src="dominoReveal (2) (2).mp4" type="video/mp4"></video>
+      </div>
+
+      <p class="frame-cap">
+        Playblast of the final animation, created by the script.
+      </p>
+
+    </section>
+
+    <!-- STILL IMAGES -->
+
+    <section class="block">
+
+      <h3>Still Images from the Animation</h3>
+
+      <div class="image-grid even-grid">
+
+        <div>
+          <div class="image-placeholder">
+            <img src="dominos pre fall.jpg"
+              alt="Grid of ivory dominoes standing before the chain reaction">
+          </div>
+          <p class="image-label">Dominoes standing before they fall</p>
+        </div>
+
+        <div>
+          <div class="image-placeholder">
+            <img src="dominos falling.jpg"
+              alt="Dominoes falling across the grid">
+          </div>
+          <p class="image-label">Dominoes falling</p>
+        </div>
+
+        <div>
+          <div class="image-placeholder">
+            <img src="Mash dominos .png"
+              alt="The MASH network in Maya laying out the domino grid">
+          </div>
+          <p class="image-label">The MASH grid</p>
+        </div>
+
+        <div>
+          <div class="image-placeholder">
+            <img src="dominos post falling.jpg"
+              alt="Overhead view of the finished Mondrian image after all dominoes have fallen">
+          </div>
+          <p class="image-label">Overhead view of the final image</p>
+        </div>
+
+      </div>
+
+    </section>
+
+    <!-- HOW THE SCRIPT WORKS -->
+
+    <section class="block">
+
+      <h3>How the Script Works</h3>
+
+      <div class="change">
+        <div class="change__figure">
+          <img src="Pick an image.png"
+            alt="The file dialog asking for an image">
+        </div>
+        <div>
+          <p class="change__num">Step 01</p>
+          <h4>Choosing the image</h4>
+          <p>
+            The script begins by clearing the scene and opening a file
+            dialog so the user can choose an image. It then reads the
+            image's width and height and uses them to figure out how
+            many rows and columns of dominoes to make, while making
+            sure there are always at least 200 dominoes.
+          </p>
+<pre class="code">fileResult = cmds.fileDialog2(fileMode=1, caption='Pick an image for the dominoes to reveal')
+
+inputFile = cmds.shadingNode('file', asTexture=True, name='revealImage')
+cmds.setAttr(inputFile + '.fileTextureName', fileResult[0], type='string')
+imgW = cmds.getAttr(inputFile + '.outSizeX')
+imgH = cmds.getAttr(inputFile + '.outSizeY')
+
+numCols = NUM_COLS
+numRows = int(round(numCols * (SPACING_X / SPACING_Z) * float(imgH) / imgW))
+while numCols * numRows &lt; 200:
+    numCols += 2
+    numRows = int(round(numCols * (SPACING_X / SPACING_Z) * float(imgH) / imgW))</pre>
+        </div>
+      </div>
+
+      <div class="change">
+        <div class="change__figure">
+          <img src="Mash dominos .png"
+            alt="MASH grid of dominoes">
+        </div>
+        <div>
+          <p class="change__num">Step 02</p>
+          <h4>Setting up the grid with MASH</h4>
+          <p>
+            I used a MASH network with a grid layout to place the
+            dominoes. Rather than simulating the MASH dominoes
+            directly, the script takes the position of each domino
+            from the network and creates a real domino in that same
+            spot.
+          </p>
+<pre class="code">mashNetwork = mapi.Network()
+mashNetwork.createNetwork(name="Dominos")
+
+cmds.setAttr(mashNetwork.distribute + '.arrangement', 6)   # grid
+cmds.setAttr(mashNetwork.distribute + '.gridx', numCols)
+cmds.setAttr(mashNetwork.distribute + '.gridz', numRows)
+cmds.setAttr(mashNetwork.distribute + '.gridAmplitudeX', sizeX)
+cmds.setAttr(mashNetwork.distribute + '.gridAmplitudeZ', sizeZ)
+
+mashNetwork.getCurrentFrameData()
+positions = list(mashNetwork.position)</pre>
+        </div>
+      </div>
+
+      <div class="change">
+        <div class="change__figure">
+          <img src="dominos post falling.jpg"
+            alt="The colored faces of the fallen dominoes">
+        </div>
+        <div>
+          <p class="change__num">Step 03</p>
+          <h4>Coloring the dominoes</h4>
+          <p>
+            Each domino is colored based on the part of the image at
+            its position. Only the face that ends up on top after the
+            domino falls is colored, while the rest of the domino
+            stays ivory. This is what keeps the image hidden at the
+            start.
+          </p>
+<pre class="code">for i, p in enumerate(positions):
+    x, z = p[0], p[2]
+    dom = cmds.duplicate(master, name='domino%03d' % i)[0]
+    cmds.move(x, 0.01, z, dom)
+
+    u = (x - xMin) / (xMax - xMin)
+    v = (zMax - z) / (zMax - zMin)
+    rgb = cmds.colorAtPoint(inputFile, output='RGB', u=u, v=v)
+
+    key = tuple(round((c ** 2.2) * 15) / 15.0 for c in rgb)
+    if key not in colorSGs:
+        colorSGs[key] = makeShader('pixel%03d' % len(colorSGs), key, flat=True)
+    cmds.sets(dom + '.f[5]', e=True, forceElement=colorSGs[key])</pre>
+        </div>
+      </div>
+
+      <div class="change">
+        <div class="change__figure">
+          <img src="dominos falling.jpg"
+            alt="Dominoes falling">
+        </div>
+        <div>
+          <p class="change__num">Step 04</p>
+          <h4>Making them fall</h4>
+          <p>
+            The dominoes and the floor are set up as rigid bodies with
+            gravity. To start the chain reaction, an invisible log
+            moves into the first domino of every row at the same time.
+            The script then runs the simulation by stepping through
+            every frame of the animation.
+          </p>
+<pre class="code">for dom in dominoes:
+    cmds.rigidBody(dom, active=True, mass=1.0, staticFriction=0.8, dynamicFriction=0.6)
+
+cmds.setKeyframe(roller, attribute='translateX', time=1, value=startX)
+cmds.setKeyframe(roller, attribute='translateX', time=ROLLER_HIT_FRAME, value=hitX)
+cmds.rigidBody(roller, passive=True)
+cmds.setAttr(roller + '.visibility', 0)
+
+cmds.gravity(name='dominoGravity', magnitude=9.8, directionY=-1)
+cmds.connectDynamic(dominoes, fields='dominoGravity')
+
+for f in range(1, END_FRAME + 1):
+    cmds.currentTime(f)</pre>
+        </div>
+      </div>
+
+      <div class="change">
+        <div class="change__figure">
+          <img src="playblast yes or no image.png"
+            alt="The dialog asking whether to render or playblast">
+        </div>
+        <div>
+          <p class="change__num">Step 05</p>
+          <h4>Camera, lights, and output</h4>
+          <p>
+            Finally, the script adds the lights and keyframes the
+            camera movement. At the end, a pop-up asks whether to
+            render the animation, playblast it, or skip that step.
+          </p>
+<pre class="code">camKeys = [
+    (1,   (width * 0.7, 3, depth * 0.6)),                     # low shot
+    (90,  (width * 0.3, overheadY * 0.35, depth * 1.1)),
+    (200, (0, overheadY, 0.5)),                               # overhead
+]
+
+choice = cmds.confirmDialog(title='Domino Reveal', message='Render or playblast?',
+                            button=['Render', 'Playblast', 'Neither'])</pre>
+        </div>
+      </div>
+
+    </section>
+
+    <!-- STRUGGLES -->
+
+    <section class="block">
+
+      <h3>Struggles</h3>
+
+      <div class="change">
+        <div class="change__figure">
+          <img src="going through dominos.0020.jpg"
+            alt="The cylinder passing through a domino without knocking it over">
+          <p class="change__cap">The cylinder going through a domino instead of pushing it.</p>
+        </div>
+        <div>
+          <p class="change__num">Struggle 01</p>
+          <h4>MASH dynamics on my laptop</h4>
+          <p>
+            One of the main challenges was that MASH dynamics would
+            not work on my laptop. The dominoes never knocked each
+            other over, and the cylinder from the starter code passed
+            right through them instead of pushing them. I tried
+            running it in Maya 2025, 2026, and 2027, changed the
+            evaluation settings, and loaded the Bullet plug-in, but
+            none of these fixed the problem. Autodesk's documentation
+            notes that MASH dynamics only uses an animated collider's
+            starting position, which matched what I was seeing. In the
+            end, I kept MASH for setting up the grid and switched to
+            Maya's regular rigid bodies for the falling, which worked
+            much more reliably.
+          </p>
+        </div>
+      </div>
+
+      <div class="change">
+        <div class="change__figure">
+          <img src="tilting domino.0012.jpg"
+            alt="Test of the first domino tipping over">
+        </div>
+        <div>
+          <p class="change__num">Struggle 02</p>
+          <h4>Getting the dominoes to fall</h4>
+          <p>
+            Getting the first dominoes to fall correctly took a lot of
+            trial and error. At one point, the first domino fell
+            backward, away from the rest of the line. Without enough
+            friction, the dominoes also slid across the floor instead
+            of tipping over. Increasing the friction fixed the
+            sliding, and an invisible log moving into the first domino
+            of each row gave the chain reaction a consistent start.
+          </p>
+        </div>
+      </div>
+
+      <div class="change">
+        <div class="change__figure">
+          <img src="washed out dominos.png"
+            alt="An early test where the image colors looked pale">
+          <p class="change__cap">An early test with washed-out colors.</p>
+        </div>
+        <div>
+          <p class="change__num">Struggle 03</p>
+          <h4>Making the image readable</h4>
+          <p>
+            In my first tests, the image was difficult to make out.
+            The colors looked washed out, and thin gaps of floor
+            showed between the rows. To fix this, I switched the
+            colored faces to a flat shader that is not affected by the
+            lighting, adjusted how the image colors were converted,
+            and made the dominoes slightly deeper to close the gaps. I
+            also changed the dominoes from black to ivory, since the
+            black edges made the final image look messy.
+          </p>
+        </div>
+      </div>
+
+      <div class="change">
+        <div class="change__figure">
+          <img src="ACM Logo.png"
+            alt="The W&amp;M ACM logo, my test image">
+          <p class="change__cap">My test image, the W&amp;M ACM logo.</p>
+        </div>
+        <div>
+          <p class="change__num">Struggle 04</p>
+          <h4>Small details and run time</h4>
+          <p>
+            My test image was the W&amp;M ACM logo, but its thin
+            letters and small text were lost because each domino can
+            only show one color. Because of this, I switched to a
+            Mondrian painting, which is made up of large blocks of
+            color. The script also took a long time to run with around
+            900 dominoes. Using fewer dominoes, shortening the
+            animation, and stopping the viewport from updating while
+            the dominoes were created made it run noticeably faster.
+          </p>
+        </div>
+      </div>
+
+    </section>
+
+    <!-- RESOURCES -->
+
+    <section class="block">
+
+      <h3>Useful Resources</h3>
+
+      <div class="prose">
+        <p>
+          In addition to the class materials, these resources were
+          helpful:
+        </p>
+      </div>
+
+      <ul class="resource-list">
+
+        <li>
+          <a href="https://help.autodesk.com/cloudhelp/ENU/MayaCRE-Tech-Docs/MASH/MASH.html"
+            target="_blank" rel="noopener">MASH Python API</a>
+          <p>How to create MASH networks and add nodes with Python.</p>
+        </li>
+
+        <li>
+          <a href="https://help.autodesk.com/cloudhelp/ENU/MayaCRE-Tech-Docs/MASH/openMASH.html"
+            target="_blank" rel="noopener">openMASH</a>
+          <p>Documentation for the MASH Python node.</p>
+        </li>
+
+        <li>
+          <a href="https://help.autodesk.com/cloudhelp/2023/ENU/Maya-MotionGraphics/files/GUID-1249B03C-0EA6-4F97-BA44-7B0646F7E1C7.htm"
+            target="_blank" rel="noopener">MASH Dynamics node</a>
+          <p>Explains the MASH dynamics settings, including the note about animated colliders.</p>
+        </li>
+
+        <li>
+          <a href="https://forums.autodesk.com/t5/maya-dynamics/mash-animated-collider-not-working-maya-2025-3/m-p/13254255"
+            target="_blank" rel="noopener">MASH animated collider not working (Autodesk forum)</a>
+          <p>A forum post about the same collider problem I had.</p>
+        </li>
+
+        <li>
+          <a href="https://help.autodesk.com/cloudhelp/2016/ENU/Maya-Tech-Docs/CommandsPython/rigidBody.html"
+            target="_blank" rel="noopener">rigidBody command</a>
+          <p>How to make rigid bodies and set things like friction and starting speed.</p>
+        </li>
+
+        <li>
+          <a href="https://help.autodesk.com/cloudhelp/2016/ENU/Maya-Tech-Docs/CommandsPython/rigidSolver.html"
+            target="_blank" rel="noopener">rigidSolver command</a>
+          <p>Settings for the rigid body solver, like step size.</p>
+        </li>
+
+        <li>
+          <a href="https://help.autodesk.com/cloudhelp/2016/ENU/Maya-Tech-Docs/Commands/colorAtPoint.html"
+            target="_blank" rel="noopener">colorAtPoint command</a>
+          <p>Gets the color of an image at a certain point, which I used to color each domino.</p>
+        </li>
+
+      </ul>
+
+    </section>
+
+    <!-- PROJECT 5 NOTES -->
+
+    <section class="block">
+
+      <h3>Project Notes</h3>
+
+      <div class="prose">
+        <p>
+          This project showed me how much of an animation can be built
+          through scripting rather than by hand. Most of my time went
+          into debugging, and when the dominoes would not fall, I had
+          to test one piece at a time to figure out whether the
+          problem was my code, the settings, or Maya itself. I also
+          learned how much the choice of image matters. Simple, bold
+          shapes show up much better in dominoes than small details,
+          which is why the Mondrian painting worked so well in the
+          end.
+        </p>
+      </div>
+
+    </section>
+
+  </main>
+
+</section>
+
+<!-- =========================================================
      FOOTER
 ========================================================= -->
 
@@ -1578,6 +2169,8 @@
   <a href="#project-3">Project 3</a>
 
   <a href="#project-4">Project 4</a>
+
+  <a href="#project-5">Project 5</a>
 
   <a href="mailto:ammorris02@wm.edu">
     Contact me &mdash; ammorris02@wm.edu
